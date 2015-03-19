@@ -1,0 +1,15 @@
+{
+  "name": "games",
+  "version": "0.0.1",
+  "description": "Drag & Drop Game Application",
+  "author": {
+    "name": "Baskin Tapkan"
+  },
+  "mean": "0.4.3",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {},
+  "license": "MIT"
+}
