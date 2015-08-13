@@ -7,7 +7,7 @@ module.exports = {
     format: 'tiny'
   },
   //  aggregate: 'whatever that is not false, because boolean false value turns aggregation off', //false
-  aggregate: false,
+  aggregate: true,
   mongoose: {
     debug: false
   },
@@ -57,6 +57,6 @@ module.exports = {
       user: 'EMAIL_ID',
       pass: 'PASSWORD'
     }
-  }, 
+  },
   secret: 'SOME_TOKEN_SECRET'
 };
