@@ -8,7 +8,7 @@ var mongoose = require('mongoose'),
 
 
 /**
- * Article Schema
+ * Game Schema
  */
 var GameSchema = new Schema({
   created: {

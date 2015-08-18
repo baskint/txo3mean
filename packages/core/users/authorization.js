@@ -18,6 +18,8 @@ var findUser = exports.findUser = function(id, cb) {
  * Generic require login routing middleware
  */
 exports.requiresLogin = function(req, res, next) {
+  console.log(req.isAuthenticated());
+
   if (!req.isAuthenticated()) {
     return res.status(401).send('User is not authorized');
   }
@@ -33,6 +35,8 @@ exports.requiresLogin = function(req, res, next) {
  * Basic Role checking - future release with full permission system
  */
 exports.requiresAdmin = function(req, res, next) {
+
+
   if (!req.isAuthenticated()) {
     return res.status(401).send('User is not authorized');
   }

@@ -36,7 +36,7 @@ module.exports = function(Games) {
                 }
 
                 Games.events.publish('create', {
-                    description: req.user.name + ' created ' + req.body.title + ' game.'
+                    description: req.user.name + ' created ' + req.body.name + ' game.'
                 });
 
                 res.json(game);
@@ -59,7 +59,7 @@ module.exports = function(Games) {
                 }
 
                 Games.events.publish('update', {
-                    description: req.user.name + ' updated ' + req.body.title + ' game.'
+                    description: req.user.name + ' updated ' + req.body.name + ' game.'
                 });
 
                 res.json(game);
@@ -80,7 +80,7 @@ module.exports = function(Games) {
                 }
 
                 Games.events.publish('remove', {
-                    description: req.user.name + ' deleted ' + game.title + ' game.'
+                    description: req.user.name + ' deleted ' + game.name + ' game.'
                 });
 
                 res.json(game);
@@ -92,7 +92,7 @@ module.exports = function(Games) {
         show: function(req, res) {
 
             Games.events.publish('view', {
-                description: req.user.name + ' read ' + req.game.title + ' game.'
+                description: req.user.name + ' read ' + req.game.name + ' game.'
             });
 
             res.json(req.game);
